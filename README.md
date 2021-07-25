@@ -1,5 +1,9 @@
 # safu-mail
 
+## About the name 'Safu Mail'
+
+Safu is a mistype for Safe popular in crypto community. Mail stands for communication. 
+
 ## Idea
 This is an implementation of https://github.com/kleros/dapp-ideas/issues/21
 

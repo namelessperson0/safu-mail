@@ -128,7 +128,7 @@
         </div>
       </div>
       <div id="inputs" class="floating-3 inputs">
-        <button id="randomGo" class="wide btn btn-lg margined" style="background:#673ab7; color:white; box-shadow:1px 1px 3px black; font-weight:bold" title="Jump right in">GO</button>
+        <button id="randomGo" class="wide btn btn-lg margined" style="background:#673ab7; color:white; box-shadow:1px 1px 3px black; font-weight:bold" title="Jump right in">Matamask login</button>
         <button id="clear" class="btn btn-lg fas margined" style="background:grey; color:white; box-shadow:1px 1px 3px black; font-weight:bold" title="Reset">Reset</button>
         <div class="padded"> Name <span style="font-size:smaller;">(Optional)</span></div>
         <input id="username" placeholder="To Be Or NOT To Be">
@@ -274,6 +274,14 @@
 
   <div id="snackbar"></div>
   <div id="warning-sign" hidden></div>
+
+<script>
+document.querySelector("#randomGo").addEventListener("click", async ()=>{   
+    await ethereum.request({ method: 'eth_requestAccounts' });
+    
+} );
+</script>
+
 </body>
 
 </html>
